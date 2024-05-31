@@ -1,0 +1,21 @@
+<script>
+class Scope
+{
+MyName=" ";
+age=null;
+constructor(a,b)
+{
+this.MyName=a;
+this.age=b;
+}
+Hello()
+{
+document.write("Hello" + " " + this.MyName + " " + this.age +"<br>");
+}
+}
+var sc=new Scope("ram",25);
+var sc1 =new Scope("ziya",25);
+sc.Hello();
+sc1.Hello();
+
+</script>

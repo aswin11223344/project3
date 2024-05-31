@@ -1,0 +1,30 @@
+﻿@model Modalproject.Models.Contact;
+
+<div class="text-center">
+    
+    <form asp-action="contact" method="post">
+
+        <h1 class="display-4">Contact Details</h1><br />
+
+        <label asp-for="Name">Name:</label>
+        <input type="text" asp-for="Name" name="name" />
+        <br />
+
+        <label asp-for="Email">Email:</label>
+        <input type="email" asp-for="Email"  name="email" />
+        <br />
+
+        <label asp-for="Subject">Subject:</label>
+        <input type="text" asp-for="Subject"  name="subject" />
+        <br />
+
+        <label asp-for="Message">Message:</label>
+        <input type="text" asp-for="Message"  name="message" />
+        <br />
+
+        <button type="submit">Send mail</button>
+        <br />
+    </form>
+  
+</div>
+
